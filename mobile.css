@@ -1,0 +1,24 @@
+/* Mostrar el header en móviles */
+.mobile-header {
+    display: block;
+}
+
+/* Ocultar el slider de la sección principal en móviles */
+.principal .image-slider {
+    display: none;
+}
+
+/* Ajustes de la sección principal */
+.principal {
+    grid-template-columns: minmax(30rem, 50rem);
+    justify-content: center;
+}
+
+.principal > .info {
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.platos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 10rem));
+}
