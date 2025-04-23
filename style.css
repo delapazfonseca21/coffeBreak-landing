@@ -245,11 +245,6 @@ main {
     font-size: 4.5rem;
 }
 
-.menu {
-    margin-bottom: 4.5rem;
-    border-top: 0.1rem solid var(--color-gris-claro);
-}
-
 .menu-title {
     font-size: 2rem;
     color: var(--color-marron-oscuro);
@@ -258,13 +253,6 @@ main {
     margin: 5rem 0 5rem;
 }
 
-.menu-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 15rem);
-    gap: 2.5rem;
-    padding: 1.5rem;
-}
 
 .menu-item {
     background-color: var(--color-blanco);
@@ -346,4 +334,73 @@ footer a {
 
 footer a:hover {
     color: var(--color-naranja-quemado);
+}
+
+.menu-category {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-claro);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(28, 37, 38, 0.05);
+}
+
+.menu-category h3 {
+    font-size: 2.4rem;
+    color: var(--color-azul-oscuro);
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-dorado);
+    padding-bottom: 0.5rem;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu-item h4 {
+    font-size: 1.6rem;
+    color: var(--color-marron-oscuro);
+}
+
+.menu-principal-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.plato-imagenes {
+    position: relative;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+.imagen-superpuesta {
+    max-width: 40.9rem;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: var(--color-gris-claro);
+    border: 2px solid var(--color-marron-medio);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen-superpuesta.uno {
+    left: 0;
+    z-index: 1;
+}
+
+.imagen-superpuesta.dos {
+    left: 25%;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-superpuesta.tres {
+    left: 50%;
+    z-index: 3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
