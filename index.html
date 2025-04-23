@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./mobile.css" media="screen and (max-width: 768px)">
     <link rel="shortcut icon" href="./images/coffee-icon.png" type="image/x-icon">
     <meta name="author" content="José De La Paz">
+
+    <script src="./navigator.js" defer></script>
     <title>Coffee Break - Menú</title>
 </head>
 <body>
@@ -30,7 +32,7 @@
             <div class="info">
                 <h1 class="info-title">Bienvenidos a Coffee Break</h1>
                 <p>Disfruta del mejor café artesanal y una selección de desayunos y postres hechos con amor. Relájate y déjate llevar por el aroma del café recién molido.</p>
-                <button>Explora el menú</button>
+                <button id="btn-explorar">Explora el menú</button>
             </div>
             <div class="image-slider">
                 <img src="./images/cafe-fondoverde.png" alt="" class="slide">
@@ -56,7 +58,7 @@
             </div>
         </section>
 
-        <section class="menu">
+        <section class="menu" id="menu">
             <h2 class="menu-title">Menú de la casa</h2>
             <div class="menu-grid">
 
@@ -65,8 +67,12 @@
                     <h3>Cafés Clásicos</h3>
                     <div class="menu-items">
                         <div class="plato-imagenes">
-                            <div class="imagen-superpuesta uno"></div>
-                            <div class="imagen-superpuesta dos"></div>
+                            <div class="imagen-superpuesta uno">
+                                <img src="./images/latte.png" alt="">
+                            </div>
+                            <div class="imagen-superpuesta dos">
+                                <img src="./images/negro.png" alt="">
+                            </div>
                         </div>
                         <div class="menu-item"><h4>Espresso</h4><span>$6.500</span></div>
                         <div class="menu-item"><h4>Americano</h4><span>$7.000</span></div>
@@ -80,8 +86,9 @@
                 <h3>Bebidas Frías</h3>
                     <div class="menu-items">
                         <div class="plato-imagenes">
-                            <div class="imagen-superpuesta uno"></div>
-                            <div class="imagen-superpuesta dos"></div>
+                            <div class="imagen-superpuesta uno">
+                                <img src="./images/frios.png" alt="">
+                            </div>
                         </div>
                         <div class="menu-item"><h4>Ice Coffee</h4><span>$9.000</span></div>
                         <div class="menu-item"><h4>Ice Latte</h4><span>$9.500</span></div>
